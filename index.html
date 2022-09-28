@@ -14,10 +14,10 @@
 
 <body>
   <div class="container">
-    <ul class="skiplinks">
-      <li><a href="#nav" class="skip">Skip to main navigation</a></li>
-      <li><a href="#main" class="skip">Skip to main information</a></li>
-      <li><a href="#contact" class="skip">Skip to contact section</a></li>
+    <ul class="skiplinks" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <li itemprop="text"><a href="#nav" class="skip">Skip to main navigation</a></li>
+      <li itemprop="mainEntity"><a href="#main" class="skip">Skip to main information</a></li>
+      <li itemprop="comment"><a href="#contact" class="skip">Skip to contact section</a></li>
     </ul>
     <header role="banner">
       <h1>Jam Box Studios</h1>
@@ -37,11 +37,11 @@
       <p role="complementary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner" role="region">
         <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h1>Address</h1>
         <p>
@@ -64,7 +64,7 @@
         </form>
       </div>
     </main>
-    <footer>
+    <footer itemscope itemtype="https://schema.org/copyrightHolder">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
